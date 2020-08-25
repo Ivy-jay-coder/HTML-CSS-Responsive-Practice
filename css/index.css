@@ -1,12 +1,154 @@
 /* Add CSS styling here*/
+/•
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    max-width:100;
+    border:1px solid grey;
+}
+*/
+html{
+    font-size:62.5%;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+
+body{
+    font-size:1.8rems;
+    line-height: 1.5;
+    background-color: #FBFFFB;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+h1, h2, h3, h4{
+    letter-spacing: 3px;
+    font-family: 'Oxygen', sans-serif;
+    font-color:#266035;
+}
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size:2.5;
+}
+
+a{
+    text-decoration: none;
+    letter-spacing:3px;
+    color:#4F4F4F;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+a{
+    width: 50px;
+    height: 50px;
+    margin-right:50px;
+    font-size: 2rem;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+/*header section styles*/
+header nav{
+    position: fixed;
+    top:0;
+    background-color: rgba(255, 255, 255, 0.7);
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 200;
+
+}
+
+.logo{
+width:75px;
+height:45%;   
+}
+.links{
+    flex-direction: row;
+    justify-content: center;
+}
+.wateringcan{
+   position: relative;
+   text-align: center;
+    
+}
+.centered{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:white;
+}
+#topbutton{
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:#266035;
+    
+}
+#topbutton:hover{
+    background-color: #266035;
+    color:white;
+}
+.leaf{
+    background:url('../images/about-img.jpg');
+    width:100%;
+    height:80vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    
+}
 
 
 
+.bigleafs{
+display:flex;
+justify-content: flex-start;
+width:100%;
+height:600px;   
+   }
+   
+   
+.story{
+display: flex;
+justify-content:flex-end;
+ width: 100%;
+ height: 600px;   
+}
+#succulants{
+ flex-direction:column;
+ width:10%;
+ height:15%;   
+}
+#cacti{
+    display:flex;
+    justify-content: flex-start;
+    width:10%;
+    border-radius:0px;
+    height:15%;   
+}
+#tropical{
+    display:flex;
+ justify-content: flex-start;
+ width:10%;
+ border-radius:0px;
+ height:15%;   
+}
 
-
-
+#room{
+    display:flex;
+ justify-content: flex-start;
+ width:10%;
+ border-radius:0px;
+ height:15%;   
+}
 
 
 /* style for tablet at 800px*/
@@ -21,3 +163,5 @@
 @media(max-width:500px){
     
 }
+/*footer styling section*/
+
